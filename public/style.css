@@ -70,6 +70,10 @@ body {
     align-items: center;
 }
 
+.todo:hover {
+  background-color: #fafafa;
+}
+
 .cb {
     width: 25px;
     height: 25px;

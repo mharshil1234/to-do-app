@@ -5,6 +5,6 @@ const ToDo = require("../models/todo");
 router.get("/", async (req, res) => {
     const todos = await ToDo.find();
     res.render("index", {todos});
-})
+});
 
 module.exports = router;

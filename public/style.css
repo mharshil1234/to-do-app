@@ -88,15 +88,35 @@ body {
     background-color: transparent;
 }
 
+.todo-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
 .todo-title {
     flex: 1;
     overflow-x: auto;
     scrollbar-width: none;
     font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.todo-title:focus {
+    border: none;
+    outline: none;
+}
+
+.right-actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .dlt-btn {
-    margin-left: auto;
     margin-right: 10px;
     border: none;
     height: 30px;
@@ -105,6 +125,36 @@ body {
     font-size: 20px;
 }
 .dlt-btn:hover {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.edit-btn {
+    margin-right: 10px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tick-btn {
+    display: none;
+    margin-right: 10px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tick-btn:hover {
     cursor: pointer;
     font-size: 25px;
 }

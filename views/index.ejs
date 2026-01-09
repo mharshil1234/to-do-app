@@ -17,12 +17,22 @@
         <div class="todos">
                 <% todos.forEach(todo => { %>
                     <div class="todo <%= todo.completed %>" id="<%= todo._id %>">
-                        <form action="/todo/toggle-checkbox/<%= todo._id %>" method="POST">
-                            <button type="submit" class="cb"></button>
-                        </form>
-                        <span class="todo-title"><%= todo.title %></span>
-                        <form action="/todo/delete/<%= todo._id %>" method="POST">
-                            <button type="submit" class="dlt-btn">🗑</button>
+
+                        <form method="POST" class="todo-form">
+                            <button type="submit" class="cb" formaction="/todo/toggle-checkbox/<%= todo._id %>"></button>
+
+                            <input class="todo-title" value="<%= todo.title %>" disabled name="todoTitle">
+
+                            <div class="right-actions">
+                        
+                                <button type="submit" class="tick-btn" formaction="/todo/editTask/<%= todo._id %>">✓</button>
+
+                                <button type="button" class="edit-btn" id="<%= todo._id %>">✏️</button>
+
+                                <button type="submit" class="dlt-btn" formaction="/todo/delete/<%= todo._id %>">🗑</button>
+
+                            </div>
+
                         </form>
                     </div>
                 <% }) %>

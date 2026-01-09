@@ -42,6 +42,20 @@ router.post("/toggle-checkbox/:id", async (req, res) => {
         console.log(err);
         res.redirect("/");
     }
+});
+
+//Edit To-Do
+router.post("/editTask/:id", async (req, res) => {
+  try {
+    const taskId = req.params.id;
+    const updatedTask = req.body.todoTitle;
+    await ToDo.findByIdAndUpdate(taskId, {title: updatedTask});
+    res.redirect("/");
+  }
+  catch (err) {
+    console.log(err);
+    res.redirect("/");
+  }
 })
 
 module.exports = router;

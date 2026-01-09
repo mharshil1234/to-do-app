@@ -161,7 +161,7 @@ body {
 
 /* Mobile Responsiveness*/
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
   .container {
     width: 60vw;
   }

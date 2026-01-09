@@ -1,10 +1,12 @@
+_Main App View_
 ![Main App View](screenshots/main.png)
 
+_Edit Mode_
 ![Edit Mode](screenshots/edit.png)
 
 # To-Do List App
 
-A simple full-stack to-do application that lets users add, edit, complete, and delete tasks.  
+A simple full stack To-Do application that lets users add, edit, complete and delete tasks.  
 This project focuses on clean UI behavior, proper form handling and backend integration.
 
 ## Features

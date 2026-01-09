@@ -158,3 +158,24 @@ body {
     cursor: pointer;
     font-size: 25px;
 }
+
+/* Mobile Responsiveness*/
+
+@media (max-width: 1600px) {
+  .container {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+}

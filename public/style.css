@@ -14,6 +14,8 @@ body {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 8px black;
+    display: flex;
+    flex-direction: column;
 }
 
 #todo-header {
@@ -52,11 +54,10 @@ body {
 }
 
 .todos {
+    flex: 1;
     margin-top: 20px;
-    height: 80%;
     overflow-y: auto;
     scrollbar-width: none;
-    margin-bottom: 20px;
 }
 
 .todo {
@@ -86,6 +87,7 @@ body {
     font-weight: bold;
     color: darkblue;
     background-color: transparent;
+    aspect-ratio: 1 / 1;
 }
 
 .todo-form {
@@ -157,6 +159,13 @@ body {
 .tick-btn:hover {
     cursor: pointer;
     font-size: 25px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin: 10px;
 }
 
 /* Mobile Responsiveness*/

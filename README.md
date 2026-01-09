@@ -16,6 +16,7 @@ This project focuses on clean UI behavior, proper form handling and backend inte
 - Save edits using the Enter key
 - Mark tasks as completed
 - Delete tasks
+- Fully responsive design for mobiles, tablets and desktops
 
 ## Tech Stack
 
